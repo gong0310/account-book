@@ -1,0 +1,92 @@
+.mybooking .mybooking-content{
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+.mybooking .item-content{
+  width: calc(100% - 100rpx);
+  padding-left: 20rpx;
+  height: 80rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.mybooking .mybooking-content-item{
+  padding: 20rpx 0;
+}
+
+.mybooking .type-title{
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #444;
+  font-weight: bold;
+  width: 100rpx;
+}
+
+.mybooking .type-title.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.mybooking .comment{
+  height: 30rpx;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 30rpx;
+}
+
+.mybooking .money{
+  line-height: 80rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.mybooking .money.add{
+  color: #e4393c;
+}
+
+.mybooking .money.reduce{
+  color: #00B26A;
+}
+
+.mybooking .icon-box-img{
+  height: 80rpx;
+}
+
+.mybooking .card{
+  color: #999;
+  font-size: 20rpx;
+  line-height: 50rpx;
+}
+
+.mybooking .card.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.mybooking .decimal{
+  font-size: 48rpx;
+  margin-top: 19rpx;
+}
+
+.mybooking .icon-box{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  border-radius: 40rpx;
+}
+
+.mybooking .card-type{
+  width: 80rpx;
+}
+
+.mybooking .delete{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.mybooking .delete-img{
+  height: 40rpx;
+}

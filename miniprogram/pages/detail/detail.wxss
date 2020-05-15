@@ -1,0 +1,81 @@
+.detail .detail-content{
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+.detail .item-content{
+  width: calc(100% - 100rpx);
+  padding-left: 20rpx;
+  height: 80rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.detail .detail-content-item{
+  padding: 20rpx 0;
+}
+
+.detail .type-title{
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #444;
+  font-weight: bold;
+  width: 100rpx;
+}
+
+.detail .type-title.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.detail .comment{
+  height: 30rpx;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 30rpx;
+}
+
+.detail .money{
+  line-height: 80rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.detail .money.add{
+  color: #e4393c;
+}
+
+.detail .money.reduce{
+  color: #00B26A;
+}
+
+.detail .icon-box-img{
+  height: 80rpx;
+}
+
+.detail .card{
+  color: #999;
+  font-size: 20rpx;
+  line-height: 50rpx;
+}
+
+.detail .card.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.detail .decimal{
+  font-size: 48rpx;
+  margin-top: 19rpx;
+}
+
+.detail .icon-box{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  border-radius: 40rpx;
+}
+
+.detail .card-type{
+  width: 80rpx;
+}

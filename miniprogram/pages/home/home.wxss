@@ -1,0 +1,159 @@
+.home .month-box{
+  background-color: #FEDB5B;
+  padding: 60rpx;
+}
+
+.home .month-title{
+  color: #444;
+  font-size: 32rpx;
+}
+
+.home .month-money{
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  color: #444; 
+  font-weight: bold;
+}
+
+.home .month-item{
+  width: 50%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.home .month-item-box{
+  margin-top: 80rpx;
+  position: relative
+}
+
+.home .line{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  height: 36rpx;
+  margin: auto;
+  background-color: #888;
+}
+
+.home .month-item-title{
+  margin-right: 10rpx;
+}
+
+.home .home-info{
+  background-color: #fff;
+  padding: 20rpx 20rpx 0;
+}
+
+.home .home-title{
+  color: #888;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+
+.home .home-title-item{
+  margin-right: 20rpx;
+}
+
+.home .point{
+  height: 10rpx;
+  width: 60rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.home .point-item{
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #888;
+  margin: 0 5rpx;
+  border-radius: 50%;
+}
+
+.home .picker-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10rpx;
+  overflow: hidden;
+}
+
+.home .icon-box{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+}
+
+
+.home .item-content{
+  width: calc(100% - 100rpx);
+  padding-left: 20rpx;
+  height: 80rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.home .home-content-item{
+  padding: 20rpx 0;
+}
+
+.home .type-title{
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #444;
+  font-weight: bold;
+  width: 100rpx;
+}
+
+.home .type-title.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.home .comment{
+  height: 30rpx;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 30rpx;
+}
+
+.home .money{
+  line-height: 80rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.home .money.add{
+  color: #e4393c;
+}
+
+.home .money.reduce{
+  color: #00B26A;
+}
+
+.home .icon-box-img{
+  height: 80rpx;
+}
+
+.home .card{
+  color: #999;
+  font-size: 20rpx;
+  line-height: 50rpx;
+}
+
+.home .card.not-comment{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.home .decimal{
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}

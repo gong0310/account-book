@@ -1,0 +1,151 @@
+.booking .booking-bg{
+  height: 160rpx;
+  background-color: #EAB93F;
+}
+
+.booking .booking-box{
+  padding: 20rpx;
+}
+
+.booking .booking-type{
+  background-color: #fff;
+  margin-top: -100rpx;
+  border-radius: 20rpx;
+}
+
+.booking-type-title-box{
+  padding: 40rpx 0;
+}
+
+.booking .booking-type-title{
+  width: 240rpx;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  border: 1rpx solid #EAB93F;
+  overflow: hidden;
+}
+
+.booking .type-tag{
+  width: 50%;
+  height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.booking .type-tag.active{
+  background-color: #FEDB5B;
+}
+
+.booking .icon-box{
+  width: 20%;
+  margin-bottom: 40rpx;
+}
+
+.booking  .icon-img{
+  width: 80rpx;
+  margin: 0 auto;
+  transition: transform .1s linear;
+}
+
+.booking  .icon-img.active{
+  transform: scale(1.2);
+}
+
+.booking .icon-image{
+  height: 80rpx;
+}
+
+.booking .icon-title{
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #444;
+}
+
+.booking .account{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.booking .account-title{
+  font-size: 28rpx; 
+  color: #444;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.booking .account-box{
+  margin-top: 20rpx;
+}
+
+.booking .account-item{
+  width: calc(20% - 40rpx);
+  height: 44rpx;
+  background-color: #e8e8e8;
+  margin: 0 20rpx;
+  font-size: 20rpx;
+  color: #444;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 22rpx;
+}
+
+.booking .account-item.active{
+  background-color: #FEDB5B;
+}
+
+.booking .booking-info{
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.booking .booking-info-item{
+  display: flex;
+}
+
+.booking .booking-info-item:not(:last-child){
+  margin-bottom: 20rpx;
+}
+
+.booking .booking-info-title{
+  color: #444;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 80rpx;
+}
+
+.booking .booking-info-ipt{
+  width: calc(100% - 80rpx);
+  height: 50prx;
+}
+
+.booking .picker-box{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.booking .digit{
+  height: 50rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.booking .save{
+  height: 80rpx;
+  background-color: #FEDB5B;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 20rpx;
+  margin-top: 60rpx;
+}

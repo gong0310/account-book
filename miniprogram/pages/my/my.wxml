@@ -1,0 +1,23 @@
+<view class="my">
+
+  <view class="my-header">
+    <view class="my-info">
+      <view class="fl avatar">
+        <image class="auto-img avatar-img" src="{{userInfo.url}}" mode="widthFix"></image>
+      </view>
+      <view class="fl nickname">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+
+  <view class="list">
+  
+    <view class="list-item" bindtap="viewMyBookingData">
+      <view class="fl my-booking">我的记账</view>
+      <view class="fr icon-arrow">
+        <image class="auto-img icon-arrow-img" src="../../images/right-arrow.png" mode="widthFix"></image>
+      </view>
+    </view>
+  
+  </view>
+
+</view>

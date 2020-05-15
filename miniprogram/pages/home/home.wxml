@@ -1,0 +1,73 @@
+<view class="home">
+  <!-- view: 布局标签，用法和html的div完全一致 -->
+  <!-- text: 修饰文本，用法和html的span完全一致 -->
+
+  <view class="month-box">
+    <view>
+      <view class="month-title">本月结余</view>
+      <view class="month-money clearfix">
+       <view class="fl">{{monthMoney.jieyu}}.</view>
+       <view class="fl decimal">{{monthMoney.decimaljieyu}}</view>
+      </view>
+    </view>
+    <view class="clearfix month-item-box">
+      <view class="month-item fl">
+        <view class="fl month-item-title">本月收入</view>
+        <view class="fl">{{monthMoney.shouru}}</view>
+      </view>
+      <view class="month-item fl">
+        <view class="fr clearfix">
+          <view class="fl month-item-title">本月支出</view>
+          <view class="fl">{{monthMoney.zhichu}}</view>
+        </view>
+      </view>
+
+      <!-- 分隔线 -->
+      <view class="line"></view>
+
+    </view>
+  </view>
+
+  <view class="home-info">
+
+    <view class="clearfix">
+      <view class="fl clearfix home-title">
+        <view class="fl home-title-item">{{date}}</view>
+        <view class="fl home-title-item">收入：{{dayMoney.shouru}}</view>
+        <view class="fl">支出：{{dayMoney.zhichu}}</view>
+      </view>
+      <view class="fr">
+        <view class="point">
+          <view class="fl point-item"></view>
+          <view class="fl point-item"></view>
+          <view class="fl point-item"></view>
+          <picker class="picker-box" mode="date" start="{{dateRange.start}}" end="{{dateRange.end}}" bindchange="toggleDate">
+            <view class="picker">请选择日期</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="home-content">
+
+      <view class="home-content-item clearfix" wx:for="{{bookingDataByDay}}" wx:key="index">
+        <view class="fl icon-box">
+          <image class="auto-img icon-box-img" src="{{item.typeIconsData.url}}" mode="widthFix"></image>
+        </view>
+        <view class="fl item-content">
+          <view class="fl item-title-comment">
+            <view class="clearfix">
+              <view class="type-title fl {{item.comment == '' ? 'not-comment' : ''}}">{{item.typeIconsData.title}}</view>
+              <view class="fl card {{item.comment == '' ? 'not-comment' : ''}}">{{item.accountData.title}}</view>
+            </view>
+            <view class="comment" wx:if="{{item.comment != ''}}">{{item.comment}}</view>
+          </view>
+          <view class="fr money {{item.typeTitle.type == 'shouru' ? 'add' : 'reduce'}}">{{item.typeTitle.type == 'shouru' ? '+' : '-'}}￥{{item.money}}</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

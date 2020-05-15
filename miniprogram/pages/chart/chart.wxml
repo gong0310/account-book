@@ -1,0 +1,67 @@
+<view class="chart">
+
+  <view class="search clearfix">
+    <view class="date fl">
+      <picker class="picker-box" mode="date" bindchange="selectDate" start="2018-09-01" end="2020-09-01">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view>
+    <view class="condition fl">
+      <picker class="picker-box" range="{{condition}}" bindchange="selectCondition">
+        <view class="picker picker-text">按{{text}}查询</view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="chart-box">
+    <view class="chart-box-title clearfix">
+
+      <view class="fl title-item" wx:for="{{titleData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-type="{{item.type}}" bindtap="toggleTitle">
+        <view class="title-text {{item.type}} {{item.isActive ? 'active' : ''}}">
+          <view>{{text}}{{item.title}}</view>
+          <view class="title-money">{{item.money}}</view>
+        </view>
+      </view>
+
+    </view>
+    <view hidden="{{series.length == 0}}">
+
+      <!-- canvas图形 -->
+      <view class="canvas-box">
+        <canvas canvas-id="pieCanvas" style="width: 100%; height: 600rpx;"></canvas>
+      </view>
+
+      <!-- 进度 -->
+      <view class="booking-data">
+
+        <view class="booking-data-item clearfix" wx:for="{{typeBookingData}}" wx:key="index" data-ids="{{item.ids}}" data-title="{{item.typeIconsData.title}}" bindtap="viewBookingDataDetail">
+          <view class="fl item-icon">
+            <image class="auto-img item-icon-img" src="{{item.typeIconsData.url}}" mode="widthFix"></image>
+          </view>
+          <view class="fl item-info">
+            <view class="top-item">
+              <view class="fl top-item-title">{{item.typeIconsData.title}}</view>
+              <view class="fr top-item-money {{defaultType}}">￥{{item.totalMoney}}</view>
+            </view>
+            <view class="bottom-item">
+              <!-- 进度条 -->
+              <view class="progress fl">
+                <view class="progress-active" style="width: {{item.money / total * 100 + '%'}}; background-color: {{item.color}};"></view>
+              </view>
+              <view class="count fl">{{item.count}}笔</view>
+            </view>
+          </view>
+          <view class="fl item-arrow">
+            <image class="auto-img item-arrow-img" src="../../images/right-arrow.png" mode="widthFix"></image>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+
+  </view>
+
+
+
+</view>

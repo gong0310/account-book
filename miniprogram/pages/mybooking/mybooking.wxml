@@ -1,0 +1,29 @@
+<view class="mybooking">
+
+  <view class="mybooking-content">
+
+      <view class="mybooking-content-item clearfix" wx:for="{{myBookingData}}" wx:key="index">
+        <view class="fl icon-box">
+          <image class="auto-img icon-box-img" src="{{item.typeIconsData.url}}" mode="widthFix"></image>
+        </view>
+        <view class="fl item-content">
+          <view class="fl item-title-comment">
+            <view class="clearfix">
+              <view class="type-title fl {{item.comment == '' ? 'not-comment' : ''}}">{{item.typeIconsData.title}}</view>
+              <view class="fl card card-type {{item.comment == '' ? 'not-comment' : ''}}">{{item.accountData.title}}</view>
+              <view class="fl card {{item.comment == '' ? 'not-comment' : ''}}">{{item.date}}</view>
+            </view>
+            <view class="comment" wx:if="{{item.comment != ''}}">{{item.comment}}</view>
+          </view>
+          <view class="fr clearfix">
+            <view class="fl money {{item.typeTitle.type == 'shouru' ? 'add' : 'reduce'}}">￥{{item.money}}</view>
+            <view class="fl delete" data-index="{{index}}" data-id="{{item._id}}" bindtap="removeMybooking">
+              <image class="auto-img delete-img" src="../../images/delete.png" mode="widthFix"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+  </view>
+
+</view>

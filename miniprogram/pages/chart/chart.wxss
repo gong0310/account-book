@@ -1,0 +1,162 @@
+.chart .condition{
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.chart .date{
+  width: calc(100% - 240rpx);
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  padding: 0 30rpx;
+}
+
+.chart .search{
+   background-color: #FEDB5B;
+   padding: 20rpx;
+}
+
+.chart .picker-box{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.chart .picker{
+  color: #666;
+  font-size: 28rpx;
+}
+
+.chart .picker-text{
+  text-align: center;
+}
+
+.chart .chart-box-title{
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.chart .title-item{
+  width: 50%;
+  height: 90rpx;
+  position: relative;
+}
+
+.chart .title-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  border: 2rpx solid transparent;
+}
+
+
+.chart .title-text.shouru.active{
+  border: 2rpx solid #e4393c;
+}
+
+.chart .title-text.zhichu.active{
+  border: 2rpx solid #00B26A;
+}
+
+.chart .title-text.shouru .title-money{
+  color: #e4393c;
+}
+
+.chart .title-text.zhichu .title-money{
+  color: #00B26A;
+}
+
+.chart .canvas-box{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.chart .booking-data{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.chart .booking-data-item{
+  padding: 20rpx;
+}
+
+.chart .item-icon{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.chart .item-icon .item-icon-img{
+  height: 80rpx;
+}
+
+.chart .item-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+}
+
+.chart .item-arrow-img{
+  height: 30rpx;
+}
+
+.chart .item-info{
+  width: calc(100% - 150rpx);
+  height: 80rpx;
+  padding: 0 20rpx;
+}
+
+.chart .top-item{
+  height: 40rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.chart .bottom-item{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.chart .top-item-title{
+  color: #444;
+}
+
+.chart .top-item-money{
+  color: #e4393c;
+  font-weight: bold;
+}
+
+.chart .count{
+  width: 100rpx;
+  color: #999;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.chart .progress{
+  width: calc(100% - 100rpx);
+  height: 24rpx;
+  margin-top: 8rpx;
+  background-color: #e8e8e8;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.chart .progress-active{
+  width: 0;
+  height: 100%;
+  transition: width .3s linear;
+}
+
+.chart .booking-data-item:not(:last-child){
+  border-bottom: 1rpx solid #e8e8e8;
+}

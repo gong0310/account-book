@@ -1,0 +1,56 @@
+.my .my-header{
+  height: 160rpx;
+  padding: 70rpx 0;
+  background-color: #FEDB5B;
+}
+
+.my .my-info{
+  height: 160rpx;
+  padding: 0 40px;
+}
+
+.my .avatar{
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10rpx rgba(255, 255, 255, .35);
+  overflow: hidden;
+}
+
+.my .avatar-img{
+  height: 160rpx;
+}
+
+.my .nickname{
+  color: #444;
+  margin-left: 40rpx;
+  line-height: 160rpx;
+  font-size: 32rpx;
+}
+
+.my .list{
+  margin-top: 20rpx;
+}
+
+.my .list-item{
+  background-color: #fff;
+  height: 100rpx;
+  padding: 0 20rpx;
+}
+
+.my .my-booking{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 100rpx;
+}
+
+.my .icon-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 35rpx;
+}
+
+.my .icon-arrow-img{
+  height: 30rpx;
+}
