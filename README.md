@@ -5,6 +5,8 @@
 - 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
 - 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
 - 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+## 扫码体验
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201201161005236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNTYwNTIw,size_16,color_FFFFFF,t_70)
 
 ## 参考文档
 
